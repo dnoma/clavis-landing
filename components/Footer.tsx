@@ -60,47 +60,11 @@
 //               <h4 className="text-sm font-semibold text-white mb-4">
 //                 {section.title}
 //               </h4>
-//               <ul className="space-y-2">
-//                 {section.links.map((link, j) => (
-//                   <li key={j}>
-//                     <a
-//                       href="#"
-//                       className="text-sm text-gray-500 hover:text-violet-400 transition-colors"
-//                     >
+export default function Footer() {
+	return (
+		<footer>
+			Footer
+		</footer>
+	);
+}
 //                       {link}
-//                     </a>
-//                   </li>
-//                 ))}
-//               </ul>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Bottom bar */}
-//         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
-//           <p className="text-sm text-gray-500">
-//             &copy; {currentYear} {t.footer.copyright}
-//           </p>
-
-//           {/* Social links */}
-//           <div className="flex items-center gap-4">
-//             <a
-//               href="#"
-//               className="p-2 text-gray-500 hover:text-violet-400 transition-colors"
-//               aria-label="LinkedIn"
-//             >
-//               <Linkedin className="w-5 h-5" />
-//             </a>
-//             <a
-//               href="#"
-//               className="p-2 text-gray-500 hover:text-violet-400 transition-colors"
-//               aria-label="Twitter"
-//             >
-//               <Twitter className="w-5 h-5" />
-//             </a>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// }

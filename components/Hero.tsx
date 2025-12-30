@@ -45,8 +45,8 @@ export default function Hero() {
             {/* Headline */}
             <div className="flex flex-col items-center gap-4">
               <div className="flex flex-col items-center gap-2">
-                <GradientText text="Regulations move fast." className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
-                <GradientText text="You move faster." className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
+                <GradientText text={t.hero.headline1} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
+                <GradientText text={t.hero.headline2} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
               </div>
               <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
                 {t.hero.subhead}

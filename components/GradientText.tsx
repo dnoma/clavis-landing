@@ -45,8 +45,9 @@ export default function GradientText({
   as: Element = 'h1'
 }: GradientTextProps): React.ReactElement {
   // Base gradient styles (required for background-clip text technique)
+  // 90deg = left to right, gradual transition reaching full purple at end
   const gradientStyle: React.CSSProperties = {
-    background: 'linear-gradient(135deg, #ffffff 0%, #a78bfa 50%, #8b5cf6 100%)',
+    background: 'linear-gradient(90deg, #ffffff 0%, #e9d5ff 25%, #c4b5fd 50%, #a78bfa 75%, #8b5cf6 100%)',
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',

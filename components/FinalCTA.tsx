@@ -17,8 +17,16 @@ export default function FinalCTA() {
   };
 
   return (
-    <section id="demo" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-20">
-      <div className="max-w-2xl mx-auto text-center">
+    <section id="demo" className="relative py-30 px-4 sm:px-6 lg:px-8">
+      {/* Background effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute top-1/3 left-1/4 w-96 h-96 bg-violet-500/15 rounded-full blur-3xl animate-pulse-glow"
+          style={{ animationDelay: "0.3s" }}
+        />
+      </div>
+
+      <div className="relative z-10 max-w-2xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
           {t.finalCta.title}
         </h2>

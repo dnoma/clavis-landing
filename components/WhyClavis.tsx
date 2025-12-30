@@ -9,8 +9,13 @@ export default function WhyClavis() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      {/* Background effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/15 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "0.8s" }} />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-bold text-center text-white mb-12">
           {t.whyClavis.title}
         </h2>

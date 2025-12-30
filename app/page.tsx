@@ -7,7 +7,6 @@ import WhoWeServe from "@/components/WhoWeServe";
 import WhyClavis from "@/components/WhyClavis";
 import Security from "@/components/Security";
 import FinalCTA from "@/components/FinalCTA";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -19,9 +18,7 @@ export default function Home() {
       <Features />
       <WhoWeServe />
       <WhyClavis />
-      <Security />
       <FinalCTA />
-      <Footer />
     </main>
   );
 }

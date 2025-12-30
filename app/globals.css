@@ -47,7 +47,7 @@ html {
 
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
-  background: linear-gradient(180deg, #0a0a1a 0%, #1a1a3e 50%, #0f0f2d 100%);
+  background: #000000;
   color: #ffffff;
   min-height: 100vh;
   overflow-x: hidden;
@@ -55,7 +55,7 @@ body {
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #ffffff 0%, #a78bfa 50%, #8b5cf6 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #e9d5ff 25%, #c4b5fd 50%, #a78bfa 75%, #8b5cf6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

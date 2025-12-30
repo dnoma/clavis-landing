@@ -422,27 +422,6 @@ export const translations = {
       noSpam: "Không spam. Hủy đăng ký bất cứ lúc nào.",
     },
 
-    // Footer
-    footer: {
-      product: {
-        title: "Sản phẩm",
-        links: ["Tính năng", "Bảo mật", "Tài liệu API"],
-      },
-      solutions: {
-        title: "Giải pháp",
-        links: ["Đội ngũ Pháp lý", "Tuân thủ", "Nhà đầu tư nước ngoài", "Tư vấn"],
-      },
-      resources: {
-        title: "Tài nguyên",
-        links: ["Blog", "Trung tâm hỗ trợ", "Cập nhật pháp luật"],
-      },
-      company: {
-        title: "Công ty",
-        links: ["Về chúng tôi", "Tuyển dụng", "Liên hệ", "Bảo mật", "Điều khoản"],
-      },
-      language: "Ngôn ngữ",
-      copyright: "Clavis. Bảo lưu mọi quyền.",
-    },
   },
 };
 

@@ -9,8 +9,13 @@ export default function Problem() {
   const { t } = useLanguage();
 
   return (
-    <section id="problem" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-20">
-      <div className="max-w-4xl mx-auto">
+    <section id="problem" className="relative py-20 px-4 sm:px-6 lg:px-8 scroll-mt-20">
+      {/* Background effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-violet-500/15 rounded-full blur-3xl animate-pulse-glow" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl font-bold text-center text-white mb-12">
           {t.problem.title}

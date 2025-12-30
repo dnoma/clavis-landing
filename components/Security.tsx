@@ -7,8 +7,13 @@ export default function Security() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-violet-500/5 to-transparent">
-      <div className="max-w-4xl mx-auto">
+    <section className="relative py-16 px-4 sm:px-6 lg:px-8">
+      {/* Background effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "1.2s" }} />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto">
         <div className="flex items-center justify-center gap-2 mb-4">
           <Shield className="w-6 h-6 text-violet-400" />
           <h2 className="text-2xl sm:text-3xl font-bold text-white">

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ArrowRight, Sparkles, Shield, Zap, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
+import GradientText from "@/components/GradientText";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -43,11 +44,10 @@ export default function Hero() {
 
             {/* Headline */}
             <div className="flex flex-col items-center gap-4">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                <span className="text-white">{t.hero.headline1}</span>
-                <br />
-                <span className="gradient-text">{t.hero.headline2}</span>
-              </h1>
+              <div className="flex flex-col items-center gap-2">
+                <GradientText text="Regulations move fast." className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
+                <GradientText text="You move faster." className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
+              </div>
               <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
                 {t.hero.subhead}
               </p>
